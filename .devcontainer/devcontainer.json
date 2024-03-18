@@ -1,0 +1,28 @@
+{
+  "name": "MATLAB R2023b web-desktop",
+  "image": "mathworks/matlab:r2023b",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "portsAttributes": {
+    "8888": {
+      "label": "MATLAB",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "waitFor": "updateContentCommand",
+  "updateContentCommand": {
+    // installing GIT to support codespaces & devcontainer workflows
+    "install-git": "sudo apt-get update && sudo apt-get install git -y",
+    "update-matlab-proxy": "sudo python3 -m pip install --upgrade pip matlab-proxy"
+  },
+  // Starts MATLAB in a browser tab
+  "postStartCommand": "run.sh -browser",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MathWorks.language-matlab"
+      ]
+    }
+  }
+}

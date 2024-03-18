@@ -17,7 +17,7 @@
     "update-matlab-proxy": "sudo python3 -m pip install --upgrade pip matlab-proxy"
   },
   // Starts MATLAB in a browser tab
-  "postStartCommand": "env MWI_ENABLE_TOKEN_AUTH=False run.sh -browser &",
+  "postStartCommand": "env MWI_ENABLE_TOKEN_AUTH=False run.sh -browser",
   "customizations": {
     "vscode": {
       "extensions": [

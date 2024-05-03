@@ -23,6 +23,12 @@
       "extensions": [
         "MathWorks.language-matlab"
       ]
+    },
+    "codespaces":{
+      "openFiles": [
+        "example.m",
+        "README.md"
+    ]
     }
   }
 }

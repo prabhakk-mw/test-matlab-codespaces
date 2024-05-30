@@ -10,5 +10,5 @@
       "installJupyterlab": true,
       "configureJupyterlabAllowOrigin": "*"
     }
-  },
+  }
 }
